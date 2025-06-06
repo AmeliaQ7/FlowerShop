@@ -7,8 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 // Dodanie kontekstu bazy danych w pamiêci
-builder.Services.AddDbContext<FlowerContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("FlowerContext")));
+builder.Services.AddDbContext<OrderContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("OrderContext")));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

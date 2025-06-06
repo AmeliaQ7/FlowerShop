@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kwiaciarnia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cc2ed549de02e9eb49d3986835ff66304f5d7bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kwiaciarnia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kwiaciarnia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
