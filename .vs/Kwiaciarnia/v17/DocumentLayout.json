@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C10A8070-4437-4C28-BA52-038EC46F6B52}|Kwiaciarnia.csproj|c:\\users\\amelk\\source\\repos\\kwiaciarnia\\models\\flowercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C10A8070-4437-4C28-BA52-038EC46F6B52}|Kwiaciarnia.csproj|solutionrelative:models\\flowercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C10A8070-4437-4C28-BA52-038EC46F6B52}|Kwiaciarnia.csproj|c:\\users\\amelk\\source\\repos\\kwiaciarnia\\controllers\\flowerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C10A8070-4437-4C28-BA52-038EC46F6B52}|Kwiaciarnia.csproj|solutionrelative:controllers\\flowerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C10A8070-4437-4C28-BA52-038EC46F6B52}|Kwiaciarnia.csproj|c:\\users\\amelk\\source\\repos\\kwiaciarnia\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C10A8070-4437-4C28-BA52-038EC46F6B52}|Kwiaciarnia.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-04T11:44:01.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FlowersController.cs",
+              "DocumentMoniker": "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\Controllers\\FlowersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FlowersController.cs",
+              "ToolTip": "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\Controllers\\FlowersController.cs",
+              "RelativeToolTip": "Controllers\\FlowersController.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAIwJsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T13:27:45.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FlowerContext.cs",
+              "DocumentMoniker": "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\Models\\FlowerContext.cs",
+              "RelativeDocumentMoniker": "Models\\FlowerContext.cs",
+              "ToolTip": "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\Models\\FlowerContext.cs",
+              "RelativeToolTip": "Models\\FlowerContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T12:19:58.001Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
