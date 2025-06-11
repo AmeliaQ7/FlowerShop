@@ -128,35 +128,9 @@ namespace Kwiaciarnia.Controllers
 
             return NoContent();
         }
+    }
+}
 
 
         
-        [HttpGet("filter")]
-        public async Task<ActionResult<IEnumerable<Order>>> FilterOrders(
-        [FromQuery] string? status,
-        [FromQuery] bool sort = false)
-        {
-            // Tworzymy zapytanie, jeszcze nie wykonujemy
-            var query = _context.Orders.AsQueryable();
-
-            // Jeśli status ma wartość (czyli jest przekazany w zapytaniu)
-            if (!string.IsNullOrEmpty(status))
-            {
-                query = query.Where(o => o.Status.ToLower() == status.ToLower());
-            }
-
-            // Jeśli sort = true, sortujemy po nazwie zamówienia
-            if (sort)
-            {
-                query = query.OrderBy(o => o.OrderName);
-            }
-
-            // Wykonujemy zapytanie i zwracamy wyniki
-            var result = await query.ToListAsync();
-
-            return result;
-        }
-
-
-    }
-}
+       

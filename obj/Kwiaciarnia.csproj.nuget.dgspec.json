@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\Kwiaciarnia.csproj": {}
+    "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\Backend\\Kwiaciarnia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\Kwiaciarnia.csproj": {
+    "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\Backend\\Kwiaciarnia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\Kwiaciarnia.csproj",
+        "projectUniqueName": "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\Backend\\Kwiaciarnia.csproj",
         "projectName": "Kwiaciarnia",
-        "projectPath": "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\Kwiaciarnia.csproj",
+        "projectPath": "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\Backend\\Kwiaciarnia.csproj",
         "packagesPath": "C:\\Users\\amelk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\obj\\",
+        "outputPath": "C:\\Users\\amelk\\source\\repos\\Kwiaciarnia\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

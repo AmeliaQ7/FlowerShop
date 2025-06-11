@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "Kwiaciarnia.Controllers.FlowersController",
-    "Method": "GetFlowers",
-    "RelativePath": "api/Flowers",
+    "ContainingType": "Kwiaciarnia.Controllers.OrdersController",
+    "Method": "GetOrders",
+    "RelativePath": "api/Orders",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Kwiaciarnia.Models.Flower, Kwiaciarnia, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Kwiaciarnia.Models.Order, Kwiaciarnia, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,22 +20,22 @@
     ]
   },
   {
-    "ContainingType": "Kwiaciarnia.Controllers.FlowersController",
-    "Method": "PostFlower",
-    "RelativePath": "api/Flowers",
+    "ContainingType": "Kwiaciarnia.Controllers.OrdersController",
+    "Method": "PostOrder",
+    "RelativePath": "api/Orders",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "flower",
-        "Type": "Kwiaciarnia.Models.Flower",
+        "Name": "order",
+        "Type": "Kwiaciarnia.Models.Order",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Kwiaciarnia.Models.Flower",
+        "Type": "Kwiaciarnia.Models.Order",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -46,9 +46,9 @@
     ]
   },
   {
-    "ContainingType": "Kwiaciarnia.Controllers.FlowersController",
-    "Method": "GetFlower",
-    "RelativePath": "api/Flowers/{id}",
+    "ContainingType": "Kwiaciarnia.Controllers.OrdersController",
+    "Method": "GetOrder",
+    "RelativePath": "api/Orders/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -61,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Kwiaciarnia.Models.Flower",
+        "Type": "Kwiaciarnia.Models.Order",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -72,9 +72,9 @@
     ]
   },
   {
-    "ContainingType": "Kwiaciarnia.Controllers.FlowersController",
-    "Method": "PutFlower",
-    "RelativePath": "api/Flowers/{id}",
+    "ContainingType": "Kwiaciarnia.Controllers.OrdersController",
+    "Method": "PutOrder",
+    "RelativePath": "api/Orders/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -85,17 +85,17 @@
         "IsRequired": true
       },
       {
-        "Name": "flower",
-        "Type": "Kwiaciarnia.Models.Flower",
+        "Name": "order",
+        "Type": "Kwiaciarnia.Models.Order",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Kwiaciarnia.Controllers.FlowersController",
-    "Method": "DeleteFlower",
-    "RelativePath": "api/Flowers/{id}",
+    "ContainingType": "Kwiaciarnia.Controllers.OrdersController",
+    "Method": "DeleteOrder",
+    "RelativePath": "api/Orders/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -109,53 +109,22 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Kwiaciarnia.Controllers.FlowersController",
-    "Method": "GetFlowerByName",
-    "RelativePath": "api/Flowers/byname/{name}",
+    "ContainingType": "Kwiaciarnia.Controllers.OrdersController",
+    "Method": "GetOrderByName",
+    "RelativePath": "api/Orders/byname/{Client}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "name",
+        "Name": "Client",
         "Type": "System.String",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Kwiaciarnia.Models.Flower",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Kwiaciarnia.Controllers.FlowersController",
-    "Method": "FilterFlowers",
-    "RelativePath": "api/Flowers/filter",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "inStock",
-        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "sort",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Kwiaciarnia.Models.Flower, Kwiaciarnia, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Kwiaciarnia.Models.Order",
         "MediaTypes": [
           "text/plain",
           "application/json",

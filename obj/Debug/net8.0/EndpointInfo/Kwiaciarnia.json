@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Flowers": {
+    "/api/Orders": {
       "get": {
         "tags": [
-          "Flowers"
+          "Orders"
         ],
         "responses": {
           "200": {
@@ -18,7 +18,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Flower"
+                    "$ref": "#/components/schemas/Order"
                   }
                 }
               },
@@ -26,7 +26,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Flower"
+                    "$ref": "#/components/schemas/Order"
                   }
                 }
               },
@@ -34,7 +34,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Flower"
+                    "$ref": "#/components/schemas/Order"
                   }
                 }
               }
@@ -44,23 +44,23 @@
       },
       "post": {
         "tags": [
-          "Flowers"
+          "Orders"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Flower"
+                "$ref": "#/components/schemas/Order"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Flower"
+                "$ref": "#/components/schemas/Order"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Flower"
+                "$ref": "#/components/schemas/Order"
               }
             }
           }
@@ -71,17 +71,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Flower"
+                  "$ref": "#/components/schemas/Order"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Flower"
+                  "$ref": "#/components/schemas/Order"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Flower"
+                  "$ref": "#/components/schemas/Order"
                 }
               }
             }
@@ -89,10 +89,10 @@
         }
       }
     },
-    "/api/Flowers/{id}": {
+    "/api/Orders/{id}": {
       "get": {
         "tags": [
-          "Flowers"
+          "Orders"
         ],
         "parameters": [
           {
@@ -111,17 +111,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Flower"
+                  "$ref": "#/components/schemas/Order"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Flower"
+                  "$ref": "#/components/schemas/Order"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Flower"
+                  "$ref": "#/components/schemas/Order"
                 }
               }
             }
@@ -130,7 +130,7 @@
       },
       "put": {
         "tags": [
-          "Flowers"
+          "Orders"
         ],
         "parameters": [
           {
@@ -147,17 +147,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Flower"
+                "$ref": "#/components/schemas/Order"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Flower"
+                "$ref": "#/components/schemas/Order"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Flower"
+                "$ref": "#/components/schemas/Order"
               }
             }
           }
@@ -170,7 +170,7 @@
       },
       "delete": {
         "tags": [
-          "Flowers"
+          "Orders"
         ],
         "parameters": [
           {
@@ -190,14 +190,14 @@
         }
       }
     },
-    "/api/Flowers/byname/{name}": {
+    "/api/Orders/byname/{Client}": {
       "get": {
         "tags": [
-          "Flowers"
+          "Orders"
         ],
         "parameters": [
           {
-            "name": "name",
+            "name": "Client",
             "in": "path",
             "required": true,
             "schema": {
@@ -211,72 +211,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Flower"
+                  "$ref": "#/components/schemas/Order"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Flower"
+                  "$ref": "#/components/schemas/Order"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Flower"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Flowers/filter": {
-      "get": {
-        "tags": [
-          "Flowers"
-        ],
-        "parameters": [
-          {
-            "name": "inStock",
-            "in": "query",
-            "schema": {
-              "type": "boolean"
-            }
-          },
-          {
-            "name": "sort",
-            "in": "query",
-            "schema": {
-              "type": "boolean",
-              "default": false
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Flower"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Flower"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Flower"
-                  }
+                  "$ref": "#/components/schemas/Order"
                 }
               }
             }
@@ -287,9 +232,10 @@
   },
   "components": {
     "schemas": {
-      "Flower": {
+      "Order": {
         "required": [
-          "name"
+          "client",
+          "orderName"
         ],
         "type": "object",
         "properties": {
@@ -297,24 +243,27 @@
             "type": "integer",
             "format": "int32"
           },
-          "name": {
+          "orderName": {
             "maxLength": 100,
             "minLength": 2,
             "type": "string"
           },
           "price": {
+            "maximum": 999999,
+            "minimum": 0,
             "type": "number",
             "format": "double"
           },
-          "description": {
+          "client": {
+            "maxLength": 100,
+            "minLength": 2,
+            "type": "string"
+          },
+          "status": {
             "type": "string",
             "nullable": true
           },
-          "quantity": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "imageFileName": {
+          "imageOfOrder": {
             "type": "string",
             "nullable": true
           }
