@@ -1,0 +1,167 @@
+/* OGÓLNE */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: lavenderblush;
+  margin: 0;
+  padding: 40px;
+  color: #2d2d2d;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* FORMULARZ */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+form label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #444;
+}
+
+form input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+form input:focus {
+  border-color: #a0aec0;
+  outline: none;
+}
+
+.button {
+  background-color: lightpink;
+  color: black;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #bfdbfe;
+}
+
+/* LISTA ZAMÓWIEŃ */
+.order-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+/* KARTA ZAMÓWIENIA */
+.order-show {
+  background-color: #ffffff;
+  width: 200px;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.02);
+  transition: box-shadow 0.2s ease;
+  font-size: 14px;
+}
+
+.order-show:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.order-show h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.order-show p {
+  margin: 4px 0;
+  color: #4b5563;
+  font-size: 13px;
+}
+
+/* PRZYCISKI */
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.edit,
+.delete {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.edit {
+  background-color: #fffacc;
+  color: #7c6f00;
+}
+
+.edit:hover {
+  background-color: #fef08a;
+}
+
+.delete {
+  background-color: #ffe4e6;
+  color: #991b1b;
+}
+
+.delete:hover {
+  background-color: #fecdd3;
+}
+
+/* MOBILNA RESPONSYWNOŚĆ */
+@media (max-width: 600px) {
+  .order-list {
+    grid-template-columns: 1fr;
+  }
+
+  .order-show {
+    padding: 12px;
+  }
+
+  form {
+    padding: 16px;
+  }
+}
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 8px;
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  background-color: lightpink;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
